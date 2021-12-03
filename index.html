@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Space Invaders</title>
+  
+  <link rel="stylesheet" href="index.css" type="text/css"/>
+</head>
+
+<body style="margin: 0%;">
+  <canvas id="canvas" width="300" height="300">
+    <img id="player" src="Spaceship.png">
+    <img id="enemy" src="Alien.png">
+  </canvas>
+  
+  <div id="game">
+    <input id="left" type="button" value="left">
+    <input id="right" type="button" value="right">
+    <input id="shot" type="button" value="shot">
+  </div>
+  
+  <p id="lifeCounter" style="color: red;">Lifes: 3</p>
+  
+  <div id="gameOver" style="display: none;">
+    <p id="gameOverText">Game Over</p>
+    
+    <input id="restart" type="button" value="restart">
+  </div>
+  
+  <script type="module" src="index.js"></script>
+</body>
+</html>
